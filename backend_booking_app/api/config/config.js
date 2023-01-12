@@ -3,7 +3,7 @@ require('dotenv').config();
 module.exports = {
     development: {
       url:process.env.DB_DEV_URL,
-      dialect:'postgres'
+      dialect:'postgres',
     },
     test: {
       database:'nipadxqg',
@@ -11,7 +11,7 @@ module.exports = {
       dialect:'postgres'
     },
     producton: {
-      database:'nipadxqg',
+      database:'nipadxqg', 
       use_env_variables: 'DB_PROD_URL',
       dialect:'postgres'
     }
