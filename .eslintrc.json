@@ -25,5 +25,8 @@
             "jsx":true
         }
     },
-    "plugins":["import","react"]
+    "plugins":["import","react"],
+    "rules": {
+        "comma-dange":0
+    }
 }

@@ -8,7 +8,7 @@
     "dev": "nodemon --exec babel-node api/app.js",
     "clean": "rm -rf build && mkdir build",
     "build": "npm run clean && babel api --out-dir build",
-    "start": "node build/app.js"     
+    "start": "node build/app.js"
   },
   "repository": {
     "type": "git",
@@ -27,11 +27,14 @@
   "dependencies": {
     "babel-eslint": "^10.1.0",
     "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
     "eslint": "^8.31.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.27.4",
     "eslint-plugin-react": "^7.32.0",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "pg": "^8.8.0",
+    "sequelize": "^6.28.0"
   },
   "devDependencies": {
     "-": "^0.0.1",
