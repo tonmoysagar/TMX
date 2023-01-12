@@ -1,0 +1,44 @@
+{
+  "name": "mvx",
+  "version": "1.0.0",
+  "description": "application",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "dev": "nodemon --exec babel-node api/app.js",
+    "clean": "rm -rf build && mkdir build",
+    "build": "npm run clean && babel api --out-dir build",
+    "start": "node build/app.js"     
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonmoysagar/TMX.git"
+  },
+  "keywords": [
+    "Time",
+    "Machine"
+  ],
+  "author": "Time Machine Tech",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonmoysagar/TMX/issues"
+  },
+  "homepage": "https://github.com/tonmoysagar/TMX#readme",
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "body-parser": "^1.20.1",
+    "eslint": "^8.31.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.4",
+    "eslint-plugin-react": "^7.32.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "-": "^0.0.1",
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6"
+  }
+}
