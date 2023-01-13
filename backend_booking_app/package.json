@@ -8,7 +8,8 @@
     "dev": "nodemon --exec babel-node api/app.js",
     "clean": "rm -rf build && mkdir build",
     "build": "npm run clean && babel api --out-dir build",
-    "start": "node build/app.js"
+    "start": "node build/app.js",
+    "migrate:all": "sequelize db:migrate:undo:all && sequelize db:migrate"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   },
   "homepage": "https://github.com/tonmoysagar/TMX#readme",
   "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
     "babel-eslint": "^10.1.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.1",
